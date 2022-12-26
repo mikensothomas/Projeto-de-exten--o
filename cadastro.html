@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <title>Projeto de extenção</title>
+</head>
+<body>
+   <form method="get" action="validado.html" onsubmit="return cadastrar();">
+    <label>Nome</label> <input type="text" name="Nome" id="nome"><br/>
+    <label>Snome</label> <input type="text" name="Sobrenome" id="sobrenome"><br/>
+    <label>CPF</label> <input type="text" name="cpf" id="cpf"><br/>
+    <label>Email</label> <input type="text" name="email" id="email"><br/>
+    <label>Senha</label> <input type="password" name="senha" id="senha"><br/>
+    <input type="radio" name="sexo" id="masculino" value="M">Masculino
+    <input type="radio" name="sexo" id="feminino" value="F">Feminino <br/>
+    <input type="submit" value="Cadastrar">
+
+    <script>
+      function cadastrar(){
+        var nome = document.getElementById("nome"),
+        sobrenome = document.getElementById("sobrenome"),
+        cpf = document.getElementById("cpf"),
+        email = document.getElementById("email"),
+        senha = document.getElementById("senha"),
+        feminino = document.getElementById("feminino"),
+        masculino = document.getElementById("masculino");
+
+        if(nome.value=="" || sobrenome.value=="" || cpf.value=="" || email.value=="" || senha.value==""){
+          alert("preencha todos os campos por favor");
+          return false;
+        }
+
+        if(!feminino.checked && !masculino.checked){
+          alert("Faça uma escolha entre masculino e feminino");
+
+          return false;
+      }
+    }
+    </script>
+   </form>
+</body>
+</html>
