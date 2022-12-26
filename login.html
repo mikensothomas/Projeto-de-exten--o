@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Projeto de extenção</title>
+</head>
+<body>
+    <h1>Página de login</h1>
+         <form method="get" action="acesso.html" onsubmit="return validar();">
+          <label>Email</label> <input type="text" name="email" id="email"><br/><br/>
+          <label>Senha</label> <input type="password" name="senha" id="senha"><br/><br/>
+          <input type="submit" value="Validar">
+      
+          <script>
+            function validar(){
+              var email = document.getElementById("email"),
+              senha = document.getElementById("senha");
+      
+              if(email.value=="" || senha.value==""){
+                alert("preencha todos os campos por favor");
+                return false;
+              }
+            }
+          </script>
+</body>
+</html>
