@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,31 +7,92 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Projeto de extenção</title>
 </head>
-<body>
 
   <style>
-    *{
-        text-align: center;
-        background-color: aqua;
-        width: 100;
-        height: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-   }
+   body {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: beige;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 360px;
+    height: 120px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+  clear: both;
+}
+
+.column-3 {    
+    width: 25%;    
+}
+
+.column-9 {    
+    width: 75%;    
+}
+
+.label {
+    padding-top: 7px;
+    text-align: right;    
+}
+
+.label:after {
+    content: ':';
+    padding-right: 5px;
+}
+
+.column {
+    float: left;
+    height: 41px;    
+}
+
+.input input {
+    width: 100%;
+    height: 34px;    
+    padding-left: 5px;
+    box-sizing: border-box;
+}
   </style>
-
-
-    <h1>Ben vido(a)</h1>
-        <form method="get" action="acesso.html" onsubmit="return validar();">
-          <label>Email</label> <input type="text" name="email" id="email"><br/><br/>
-          <label>Senha</label> <input type="password" name="senha" id="senha"><br/><br/>
-          <input type="submit" value="Validar">
-      
+  <body>
+    <h1>Bem vindo(a)</h1>
+    <p class="text">Seu cadastro foi feito com sucesso<br>Agora você pode entrar com seu<br>email e senha cadastrados.</p>
+    <div id="container">
+      <div class="row">
+          <div class="column-3 column label">
+              <label for="txtLogin">Email</label>
+          </div>
+          <div class="column-9 column input">
+              <input type="text" placeholder="Email" id="txtLogin" />
+          </div>
+      </div>
+      <div class="row">
+          <div class="column-3 column label">
+              <label for="txtPassword">Senha</label>
+          </div>
+          <div class="column-9 column input">
+              <input type="password" placeholder="Senha" id="txtPassword" />
+          </div>
+      </div>
+  </div>
+  
           <script>
-            function validar(){
+           /* function validar(){
               var email = document.getElementById("email"),
               senha = document.getElementById("senha");
       
@@ -39,7 +100,7 @@
                 alert("preencha todos os campos por favor");
                 return false;
               }
-            }
+            }*/
           </script>
 </body>
 </html>
