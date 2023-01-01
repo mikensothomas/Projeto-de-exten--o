@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
-  <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/6452b5032e.js" crossorigin="anonymous"></script>
   <title>Projeto de extenção</title>
 </head>
 
@@ -14,14 +14,19 @@
     margin: 0;
     font-family: 'noto Sans' sans-serif;
   }
+  body{
+    background-color: #4609e0;
+  }
   .log-left{
     width: 40%;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 30%;
     line-height: 3;
     background-color: #2f2841;
     border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
   }
   .log-left > h1{
     color: #00ff88;
@@ -48,10 +53,13 @@
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
+    color: #5308b6;
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff0052;
+  }
+  .redes > ul{
+    display: flex;
   }
 </style>
 <body>
@@ -78,18 +86,7 @@
        <div>
        <a href="login.html" style="color: aliceblue">Já fiz meu cadastro</a>
        </div>
-    </div>
   </form>
-  <nav class="redes">
-    <ul>
-      <li><a href="">Facebook</a><i class="fa-brands fa-facebook"></i></i></li>
-      <li><a href="">Instagram</a></li>
-      <li><a href="">Linking</a></li>
-      <li><a href="">Github</a></li>
-      <li><a href="">Youtub</a></li>
-      <li><a href="">Twitter</a></li>
-    </ul>
-  </nav>
     <script>
       function cadastrar(){
         var nome = document.getElementById("nome"),
