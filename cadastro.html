@@ -27,6 +27,7 @@
     border-radius: 15px;
     text-align: center;
     color: aliceblue;
+    padding: 2px;
   }
   .log-left > h1{
     color: #00ff88;
@@ -40,6 +41,31 @@
     border-radius: 7px;
     outline: none;
     width: 30%;
+  }
+  .lab{
+    position: absolute;
+    top: 12.8%;
+    left: 35%;
+  }
+  .labb{
+    position: absolute;
+    top: 21%;
+    left: 35%;
+  }
+  .labbb{
+    position: absolute;
+    top: 29%;
+    left: 35%;
+  }
+  .labbbb{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+  }
+  .labbbbb{
+    position: absolute;
+    top: 45.2%;
+    left: 35%;
   }
   .link > a{
      text-decoration: none;
@@ -65,16 +91,36 @@
 <body>
   <form class="log-left" method="get" action="login.html" onsubmit="return cadastrar();">
     <h1 class="h1">Página de cadastro</h1>
-    <label>Nome</label>
-    <input type="text" class="inpu" placeholder="Nome" name="Nome" style="height: 30px" id="nome"><br/>
-    <label>Snome</label>
-    <input type="text" class="inpu" placeholder="Sobre nome" name="Sobrenome" style="height: 30px" id="sobrenome"><br/>
-    <label>CPF</label>
-    <input type="text" class="inpu" placeholder="CPF" name="cpf" style="height: 30px" id="cpf"><br/>
-    <label>Email</label>
-    <input type="text" class="inpu" placeholder="Email" name="email" style="height: 30px" id="email"><br/>
-    <label>Senha</label>
-    <input type="password" class="inpu" placeholder="Senha" name="senha" style="height: 30px" id="senha"><br/>
+    <div class="lab">
+      <label class="lab">Nome</label>
+    </div>
+    <div>
+      <input type="text" class="inpu" placeholder="Nome" name="Nome" style="height: 20px" id="nome">
+    </div>
+    <div class="labb">
+      <label>Sobrenome</label>
+    </div>
+    <div>
+      <input type="text" class="inpu" placeholder="Sobre nome" name="Sobrenome" style="height: 20px" id="sobrenome">
+    </div>
+    <div class="labbb">
+      <label>CPF</label>
+    </div>
+    <div>
+      <input type="text" class="inpu" placeholder="CPF" name="cpf" style="height: 20px" id="cpf">
+    </div>
+    <div class="labbbb">
+      <label>Email</label>
+    </div>
+   <div>
+     <input type="text" class="inpu" placeholder="Email" name="email" style="height: 20px" id="email">
+   </div>
+    <div class="labbbbb">
+      <label>Senha</label>
+    </div>
+    <div>
+      <input type="password" class="inpu" placeholder="Senha" name="senha" style="height: 20px" id="senha">
+    </div>
     <input type="radio" name="sexo" id="masculino" value="M">Masculino
     <input type="radio" name="sexo" id="feminino" value="F">Feminino <br/>
     <input class="botao" type="submit" value="Cadastrar">
