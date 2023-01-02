@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Redefinir a senha</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    body{
+        position: absolute;
+        top: 30%;
+        left: 41%;
+        line-height: 2;
+        background-color: rgb(230, 176, 111);
+    }
+    .form01{
+        background-color: rgb(253, 230, 202);
+        padding: 60px;
+        border-radius: 15px;
+    }
+    .form01 > p{
+        text-align: center;
+    }
+    .botao_btn{
+        width: 93%;
+    }
+    .inpu{
+        outline: none;
+    }
+</style>
+<body>
+    <form action="" class="form01" method="get">
+        <p>Redefine sua senha</p>
+            <div>
+                <label>Entra com o email cadastrado</label>
+            </div>
+            <div>
+                <input class="inpu" type="text" name="email" id="email" placeholder="Entre seu email aqui">
+            </div>
+            <input class="botao_btn" type="submit" id="botao" value="Enviar">
+            <div class="defin_senha">
+                <label>Entre a nova senha</label>
+            </div>
+            <div>
+                <input class="inpu" type="password" id="senha" name="senha" placeholder="Entre com a senha aqui">
+            </div>
+            <div class="defin_senha">
+                <label>Repete a senha de novo</label>
+            </div>
+            <div>
+                <input class="inpu" type="password" id="senha" name="senha" placeholder="Repete a senha de novo">
+            </div>
+    </form>
+</body>
+</html>
