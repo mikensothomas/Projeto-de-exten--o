@@ -87,7 +87,7 @@
 }
   </style>
   <body>
-    <form method="get" action="acesso.html">
+    <form method="get" action="acesso.html" onsubmit="return Enviar();">
             <h1>Bem vindo(a)</h1>
         <p class="text">Seu cadastro foi feito com sucesso<br>Agora você pode entrar com seu<br>email e senha cadastrados.</p>
         <div id="container">
@@ -96,7 +96,7 @@
                 <label for="txtLogin">Email</label>
             </div>
             <div class="column-9 column input">
-                <input type="text" placeholder="Email" id="txtLogin" />
+                <input type="text" placeholder="Email" id="email" />
             </div>
         </div>
         <div class="row">
@@ -104,22 +104,22 @@
                 <label for="txtPassword">Senha</label>
             </div>
             <div class="column-9 column input">
-                <input type="password" placeholder="Senha" id="txtPassword" />
+                <input type="password" placeholder="Senha" id="senha" />
             </div>
         </div>
         </div>
             <input class="columnbnt" type="submit" value="Enviar">
     
         <script>
-            /* function validar(){
-            var email = document.getElementById("email"),
-                senha = document.getElementById("senha");
+            function Enviar(){
+               var email = document.getElementById("email"),
+                 senha = document.getElementById("senha");
         
-                if(email.value=="" || senha.value==""){
-                    alert("preencha todos os campos por favor");
+                 if(email.value=="" || senha.value==""){
+                    alert("Preencha todos os campos por favor");
                     return false;
+                 }
                 }
-                }*/
         </script>
     </form>
 </body>

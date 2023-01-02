@@ -28,13 +28,20 @@
     }
     .botao_btn{
         width: 93%;
+        background: rgb(236, 183, 118);
+        cursor: pointer;
     }
     .inpu{
         outline: none;
     }
+    .btn{
+        width: 93%;
+        background: rgb(236, 183, 118);
+        cursor: pointer;
+    }
 </style>
 <body>
-    <form action="" class="form01" method="get">
+    <form action="login.html" class="form01" method="get" onsubmit="return Enviar(), Salvar();">
         <p>Redefine sua senha</p>
             <div>
                 <label>Entra com o email cadastrado</label>
@@ -47,14 +54,35 @@
                 <label>Entre a nova senha</label>
             </div>
             <div>
-                <input class="inpu" type="password" id="senha" name="senha" placeholder="Entre com a senha aqui">
+                <input class="inpu" type="password" id="senha1" name="senha1" placeholder="Entre com a senha aqui">
             </div>
             <div class="defin_senha">
                 <label>Repete a senha de novo</label>
             </div>
             <div>
-                <input class="inpu" type="password" id="senha" name="senha" placeholder="Repete a senha de novo">
+                <input class="inpu" type="password" id="senha2" name="senha2" placeholder="Repete a senha de novo">
             </div>
+            <div>
+                <input class="btn" type="submit" id="botao" value="Salvar">
+            </div>
+            <script>
+                function Enviar(){
+                    var email= document.getElementById("email");
+                    if(email.value== ""){
+                        alert("Preencha  campo de email por favor");
+                        return false;
+                    }
+                }
+
+                function Salvar(){
+                    var senha1 = document.getElementById("senha1"),
+                        senha2 = document.getElementById("senha2");
+                    if(senha1.value=="" || senha2.value==""){
+                        alert("Preencha todos os campos");
+                        return false;
+                    }
+                }
+            </script>
     </form>
 </body>
 </html>
